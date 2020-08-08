@@ -34,13 +34,13 @@ public class HelloServlet extends HttpServlet {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-    	PrintWriter writer = resp.getWriter();
-		writer.println("Hello stuped");
-     //   ServletOutputStream out = resp.getOutputStream();     
-    //	out.write("<html> <body>		<h2>BarCode</h2>		<p>Barcode has been generated succeed</p> </body>	<img src=\"one.jpg\" alt=\"альтернативный текст\" />  <form action=\"hello\" method=\"GET\"> <input type=\"text\" name=\"studentName\" placeholder=\"What is you name?\"> <input type=\"submit\" /> </form> </html>".getBytes());
+   // 	PrintWriter writer = resp.getWriter();
+	//	writer.println("Hello stuped");
+        ServletOutputStream out = resp.getOutputStream();     
+    	out.write("<html> <body>		<h2>BarCode</h2>		<p>Barcode has been generated succeed</p> </body>	<img src=\"one.jpg\" alt=\"альтернативный текст\" />  <form action=\"hello\" method=\"GET\"> <input type=\"text\" name=\"studentName\" placeholder=\"What is you name?\"> <input type=\"submit\" /> </form> </html>".getBytes());
     //	out.write(("<html> <body>		<h2>BarCode</h2>		<p>Barcode has been generated succeed</p> </body>	  <form action=\"hello\" method=\"GET\"> <input type=\"text\" name=\"studentName\" placeholder=\"What is you name?\"> <input type=\"submit\" /> </form> </html>").getBytes());
-    //    out.flush();
-   //    out.close();
+        out.flush();
+       out.close();
 //        <form action="processFormVersionThree" method="GET">
 //        <input type="text" name="studentName" placeholder="What is you name?">
 //        <input type="submit" />
