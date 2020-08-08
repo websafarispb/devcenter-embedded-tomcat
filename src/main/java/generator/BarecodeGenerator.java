@@ -59,7 +59,9 @@ public class BarecodeGenerator {
 
       //  ImageIO.write(result, "jpg", new File("one2.jpg"));
     //    ImageIO.write(result, "jpg", new File("C:\\fox\\devcenter-embedded-tomcat\\src\\main\\webapp\\one.jpg"));
-        ImageIO.write(result, "jpg", new File(getClass().getClassLoader().getResource("one.jpg").getFile()));
+     //   ImageIO.write(result, "jpg", new File(getClass().getClassLoader().getResource("one.jpg").getFile()));
+        ImageIO.write(result, "jpg", new File("one.jpg"));
+
 
 
 
